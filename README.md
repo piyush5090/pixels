@@ -31,7 +31,7 @@ This Node.js app downloads photos and videos from Pexels to your local storage, 
    - Copy `.env.example` to `.env` (or run the script once, it will create it).
    - Edit `.env` and set `PEXELS_API_KEYS` to a comma-separated list (e.g., `key1,key2`).
 
-3) Run the script:
+3) Run the script (Linux/macOS):
 ```bash
 bash run.sh
 ```
@@ -42,6 +42,15 @@ Optional: You can also run directly:
 npm install
 npm start
 ```
+
+### Windows
+- Double-click `run.bat` (Command Prompt) or `run.ps1` (PowerShell)
+  - If needed, right-click `run.ps1` → Run with PowerShell
+  - If PowerShell execution policy blocks the script, run PowerShell as Administrator and execute:
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+Then run `run.ps1` again.
 
 ### Configuration (.env)
 - **PEXELS_API_KEYS**: Comma-separated Pexels API keys. The app rotates keys and cools down for `COOLDOWN_HOURS` after 429.
