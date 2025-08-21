@@ -4,7 +4,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "daemon": "node index.js",
+    "test": "echo \"No tests\" && exit 0"
   },
   "keywords": [],
   "author": "",
@@ -12,8 +14,6 @@
   "description": "",
   "dependencies": {
     "axios": "^1.11.0",
-    "dotenv": "^17.2.1",
-    "fs": "^0.0.1-security",
-    "node-fetch": "^3.3.2"
+    "dotenv": "^17.2.1"
   }
 }
